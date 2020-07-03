@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//func for adding edges to an directed graph
+//func for adding edges to a directed graph
 void addEdge(vector<int> adj[], int edge1, int edge2){
     adj[edge1].push_back(edge2);
     
