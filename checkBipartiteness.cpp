@@ -35,7 +35,9 @@ bool isBipartite(int G[][V], int s){
                 colorArr[x] = 1 - colorArr[top];
                 q.push(x);
             }
-            else if( colorArr[x] == colorArr[top] && G[top][x])
+            else if( colorArr[x] == colorArr[top] && G[top][x]){
+                
+            }
         }
 
     }
