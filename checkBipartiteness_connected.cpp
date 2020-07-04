@@ -5,6 +5,9 @@
 // 4. assign color to all vertices such that it satisfies all the constraints of m way coloring problem where m = 2.
 // 5. While assigning colors, if we find a neighbor which is colored with same color as current vertex, then the graph cannot be colored with 2 vertices (or graph is not Bipartite)
 
+
+//example for connected graphs
+
 #include <bits/stdc++.h>
 #define V 4
 // #define V 5
