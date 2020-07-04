@@ -7,6 +7,10 @@ using namespace std;
 //time complexity is O(V+E)
 //O(V) - auxiliary space, becase stack is used
 
+//vector can be used instead of stack.
+// If the vector is used 
+//then print the elements in reverse order to get the topological sorting
+
 class Graph{
     int vertexNum;
     list<int> *adj;
@@ -31,7 +35,7 @@ void Graph::addEdge(int edge1, int edge2){
 
 void Graph::topologicalSortcalc(int v, bool visited[], stack<int> &Stack){
     visited[v] = true;
-    
+
     list<int>::iterator itr;
     for(itr = adj[v].begin(); itr != adj[v].end(); ++itr){
         if(!visited[*itr])
